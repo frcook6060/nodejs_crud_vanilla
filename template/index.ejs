@@ -1,0 +1,31 @@
+<%- include inc/head -%>
+        <div>
+            <a href="/new">New Post</a>
+        </div>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Posts</th>
+                    <th scope="col">Edit Post</th>
+                    <th scope="col">Delete Post</th>
+                </tr>
+            </thead>
+            <tbody>
+
+<%
+                for(i = 0; i < posts.length; i++)
+                {
+%>
+                    <tr>
+                        <th scope="row"><%= posts[i].id %></th>
+                        <td><a href="/get?id=<%= posts[i].id %>"><%= posts[i].post %></a></td>
+                        <td><a href="/edit?id=<%= posts[i].id %>">Edit Post</a></td>
+                        <td><a href="/delete?id=<%= posts[i].id %>">Delete Post</a></td>
+                    </tr>
+<%
+                }
+%>
+            </tbody>
+        </table>
+<%- include inc/foot -%>

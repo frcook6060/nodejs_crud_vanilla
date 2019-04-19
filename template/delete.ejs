@@ -1,0 +1,12 @@
+<%- include inc/head -%>
+
+<div>
+    <p>
+        Are you sure you want to permently delete '<%= post.post %>'?
+    </p>
+    <p>
+        <a href="/delete/post?id=<%= post.id %>">Yes</a> <a href="/index">No</a>
+    </p>
+</div>
+
+<%- include inc/foot -%>
