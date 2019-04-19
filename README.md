@@ -1,4 +1,4 @@
-##Node.js Crud Vanilla
+# Node.js Crud Vanilla
 
 This is a really simple application that tests node.js. Its a basic
 data driven crud application. This application doesn't do anything 
